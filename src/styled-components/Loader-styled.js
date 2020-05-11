@@ -1,12 +1,12 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Loader = styled.div`
-animation: run 0.8s linear infinite;
-position: fixed;
-top: calc(97vh - 25px);
-transform: scale(0.1);
+  animation: run 0.8s linear infinite;
+  position: fixed;
+  top: calc(97vh - 25px);
+  transform: scale(0.1);
 
-.pokeBall {
+  .pokeBall {
     position: fixed;
     animation: rotating 0.3s linear infinite;
     width: 500px;
@@ -47,7 +47,7 @@ transform: scale(0.1);
     height: 120px;
     border-radius: 50%;
     background-color: #fff;
-    content: '';
+    content: "";
     -webkit-transform: rotateX(-20deg) rotateY(20deg);
     transform: rotateX(-20deg) rotateY(20deg);
     box-shadow: -4px -4px 0 0 rgba(212, 212, 212, 0.6),
@@ -63,7 +63,7 @@ transform: scale(0.1);
     height: 80px;
     border-radius: 50%;
     background-color: #fff;
-    content: '';
+    content: "";
     -webkit-transform: rotateX(-20deg) rotateY(20deg);
     transform: rotateX(-20deg) rotateY(20deg);
     box-shadow: -4px -4px 0 0 rgba(212, 212, 212, 0.6),
@@ -77,7 +77,7 @@ transform: scale(0.1);
     box-shadow: -2px -2px 0 0 rgba(212, 212, 212, 0.6),
       2px 2px 10px rgba(0, 0, 0, 0.6);
   }
-  
+
   @keyframes rotating {
     from {
       transform: rotate(0deg);
@@ -86,7 +86,7 @@ transform: scale(0.1);
       transform: rotate(360deg);
     }
   }
-  
+
   @keyframes run {
     0% {
       left: 25vw;
@@ -95,6 +95,5 @@ transform: scale(0.1);
       left: 75vw;
     }
   }
-
-`
+`;
 export default Loader;
